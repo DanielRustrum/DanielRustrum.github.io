@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Petco</title>
+</head>
+<body>
+    <nav>
+        <div id="nav-content">
+            <div id="nav-left">
+                <img src="./assets/image.png" alt="Petco Logo, Dog and Cat together.">
+                <h1>Petco</h1>
+            </div>
+            <div id="nav-right">
+                <button class="nav-action-btn nav-down-btn" close-search-btn>
+                    <img src="./assets/icons/Icon awesome-angle-down.png" alt="Down Arrow Icon">
+                </button>
+                <button class="nav-action-btn" magnify-btn open-search-btn>
+                    <img src="./assets/Icon open-magnifying-glass-1.png" alt="Search Icon">
+                </button>
+                <a class="nav-action-btn" href="">
+                    <img src="./assets/Icon open-person.png" alt="Account Icon">
+                </a>
+                <a class="nav-action-btn" href="">
+                    <img src="./assets/Cart.png" alt="Cart Icon">
+                </a>
+            </div>
+            
+            
+        </div>
+        <div 
+            id="search-banner" 
+            style="display: none;" 
+            search-banner
+        >
+            <input type="text" name="Text Search Input" placeholder="Search..." search-box-input>
+            <div>
+                <button run-search-btn>
+                    <img src="./assets/Icon open-magnifying-glass-1.png" alt="Search Icon">
+                </button>
+                <button close-search-btn>
+                    <img src="./assets/Icon ionic-md-close-1.png" alt="Close Icon">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="sale-banner" sale-banner>
+            <div>
+                <p>Stock Up! - 15% OFF on orders of $50+</p>
+                <a href=".">Shop ALL</a>
+            </div>
+            <button id="close-sale-banner" close-sale-banner>
+                <img src="./assets/Icon ionic-md-close.png" alt="Close Icon">
+            </button>
+        </div>
+        <div id="hero">
+            <div id="hero-left">
+                <div>
+                    <h1>This New Year<br>Get what your Pet Needs</h1>
+                    <p>Up to 50% off of Toys, Treats, and More!</p>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+            <div id="hero-right">
+                <img src="./assets/end-of-year-clearance-hp-hero-122621-1412x1192.png" alt="Dog and Cat Under a Disco Ball.">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Select Action -->
+        <div id="action-section-block">
+            <div id="action-switch-buttons">
+                <button class="action-switch-button action-button-focused" trigger-products-section>
+                    <span class="action-switch-button-text-outline">Our</span> Products
+                </button>
+                <button class="action-switch-button" trigger-services-section>
+                    <span class="action-switch-button-text-outline">Our</span> Services
+                </button>
+                <button class="action-switch-button" trigger-memberships-section>
+                    <span class="action-switch-button-text-outline">Our</span> Memberships
+                </button>
+            </div>
+            <div id="action-section-container">
+                <!-- Products -->
+                <div id="action-products" action-section="Products">
+                    <div id="product-button-container">
+                        <ul id="product-list-buttons">
+                            <li class="product-list-button"><button trigger-product-list="Dog">Dog</button></li>
+                            <li class="product-list-button"><button trigger-product-list="Cat">Cat</button></li>
+                            <li class="product-list-button"><button trigger-product-list="Fish">Fish</button></li>
+                            <li class="product-list-button"><button trigger-product-list="Small-Pet">Small Pet</button></li>
+                            <li class="product-list-button"><button trigger-product-list="Reptile">Reptile</button></li>
+                            <li class="product-list-button"><button trigger-product-list="Bird">Bird</button></li>
+                            <li class="product-list-button"><button trigger-product-list="All">All</button></li>
+                        </ul>
+                    </div>
+                    <div id="product-list-container">
+                        <ul id="product-list" product-list></ul>
+                    </div>
+                    <div id="product-shop-button">
+                        <a href="." product-shop-link>Shop</a>
+                    </div>
+                </div>
+                <!-- Services -->
+                <div id="action-services" style="display:none" action-section="Services">
+                    <div class="service-card" id="service-adoption-container">
+                        <div id="adoption-image-container">
+                            <img id="adoption-image" src="./assets/hp-services-585w-240h.png" alt="Small Dog being dried off">
+                        </div>
+                        <h3><img src="./assets/icons/hand-heart.svg" alt="Hand holding heart">Adoption</h3>
+                        <p>Ready to add a new love to your family? There are so many wonderful pets in your community waiting for loving homes. Put your love into action by adopting today - and spread the word that adoption is the way to go.</p>
+                        <a href=".">Learn More</a>
+                    </div>
+                    <div class="service-card vertical-service-card" id="service-health-container">
+                        <h3>Health & Wellness Services</h3>
+                        <p>We offer a variety of premium pet services right inside most stores that are designed to save you time, money and stress. Take care of your pet’s needs, all in one place.</p>
+                        <a href=".">View All</a>
+                    </div>
+                    <div class="service-card vertical-service-card" id="service-positive-container">
+                        <h3><img src="./assets/icons/dog.svg" alt="Dog"> Positive Training</h3>
+                        <p>Our expert trainers can help solve unwanted behaviors, build trust and encourage good manners in every scenario.</p>
+                        <a href=".">Learn More</a> 
+                    </div>
+                    <div class="service-card horizontal-service-card" id="service-pharmacy-container">
+                        <h3><img src="./assets/icons/Icon awesome-pills.png" alt="long pill and tablet pill next to eachother.">Pharmacy</h3>
+                        <p>We make shopping for your pet’s medication and vet diets simple, affordable, and reliable.</p>
+                        <a href=".">Shop Now</a> 
+                    </div>
+                    <div class="service-card horizontal-service-card" id="service-vet-container">
+                        <h3><img src="./assets/icons/Icon map-veterinary-care.png" alt="Paw with cross in the middle">Veterinary Services</h3>
+                        <p>We are committed to delivering compassionate vet care with a broad range of affordable, personalized solutions.</p>
+                        <a href=".">Learn More</a> 
+                    </div>
+                    <div class="service-card horizontal-service-card" id="service-grooming-container">
+                        <h3><img src="./assets/icons/brush.svg" alt="Hair Brush"> Petco Grooming</h3>
+                        <p>Our stylists help support your pet’s health with personalized care.</p>
+                        <a href=".">Learn More</a> 
+                    </div>
+                </div>
+                <!-- Memberships -->
+                <div id="action-memberships" style="display:none" action-section="Memberships">
+                    <div id="member-vital-care-container">
+                        <div class="member-header">
+                            <img src="./assets/icons/heart-cross.svg" alt="Heart with Cross in the middle.">
+                            <div>
+                                <h4>Petco</h4>
+                                <h3>Vital Care</h3>
+                            </div>
+                        </div>
+                        <h4 id="vital-care-subheader">A new whole health plan for $19 a month</h4>
+                            <div id="vital-care-content">
+                                <h5>An annual plan dedicated to pet wellness with 30% off every groom, routine vet exams and more.</h5>
+                                <div>
+                                    <a href=".">Enroll Now</a>
+                                    <p>*Annual Commitment Required.</p>
+                                </div>
+                                <img src="./assets/healthy-habits-2up-122621-pets-790x844.png" alt="Dog and Cat together.">
+                            </div>
+                    </div>
+                    <div id="member-rewards-container"> 
+                        <h3><span>Pals</span>rewards</h3>
+                        <h4>Manage your pet’s health & wellness needs</h4>
+                        <p>Enjoy personalized care reminders and recommendations, get rewarded for every purchase and receive expert support to guide you through pet parenthood.</p>
+                        <a href=".">Join Now</a>
+                    </div>
+                    <div class="member-bottom-card">
+                        <div class="member-header">
+                            <img src="./assets/icons/card.svg" alt="Credit Card">
+                            <div>
+                                <h4>Petco</h4>
+                                <h3>Pay</h3>
+                            </div>
+                        </div>
+                        <p>Get 20% off your first purchase when you use your Petco Pay credit card the same day you open an account.</p>
+                        <a href=".">Learn More</a>
+                    </div>
+                    <div class="member-bottom-card">
+                        <div class="member-header">
+                            <img src="./assets/icons/Pet Shield.png" alt="Shield with Paw in the Middle.">
+                            <div>
+                                <h4>Petco</h4>
+                                <h3>Insurance</h3>
+                            </div>
+                        </div>
+                        <p>Be ready for anything with Petco Insurance: flexible and affordable insurance plans.</p>
+                        <a href=".">Get A Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What is Needed -->
+        <div id="what-needed-section">
+            <h2>What your pet needs, when they need it.</h2>
+            <div id="what-needed-container">
+                <div class="what-needed-column">
+                    <img src="./assets/hp-shop-your-way-same-day.png" alt="Shopping bag at Front Door.">
+                    <div>
+                        <h3>Free Same-Day Delivery</h3>
+                        <p>Order by 2pm local time to get free delivery on orders $35+ today.</p>
+                        <a href=".">Shop Now</a>
+                    </div>
+                </div>
+                <div class="what-needed-column">
+                    <img src="./assets/hp-shop-your-way-rd.png" alt="Calendar with a Circlular Arrow on the Top Left.">
+                    <div>
+                        <h3>Repeat Delivery</h3>
+                        <p>35% off your first order plus 5% off all future orders.</p>
+                        <a href=".">Shop Now</a>
+                    </div>
+                </div>
+                <div class="what-needed-column">
+                    <img src="./assets/hp-shop-your-way-cp.png" alt="Car next to Pickup Sign.">
+                    <div>
+                        <h3>Curbside Pickup</h3>
+                        <p>15% off your online order of $50+. Available at most locations.</p>
+                        <a href=".">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Promo Banner -->
+        <div id="promo-banner-container">
+            <div id="mobile-promo-header" class="promo-header">
+                <h2>Milions of pets have lost weight with Hill's</h2>
+                <p>Spend $30 on Hill's dog or cat food, Get a $5 Petco eGift Card or Spend $60 and get $15.</p>
+            </div>
+            <div id="upper-banner-buttons">
+                <a id="promo-shop-now-button" href=".">Shop Now</a>
+                <a id="promo-terms-link" href=".">Full Terms and Conditions</a>
+            </div>
+            <div id="promo-banner">
+                <img src="./assets/banner.png" alt="Hill's Logo next to bags of pet food.">
+                <div id="desktop-promo-header" class="promo-header">
+                    <h2>Milions of pets have lost weight with Hill's</h2>
+                    <p>Spend $30 on Hill's dog or cat food, Get a $5 Petco eGift Card or Spend $60 and get $15.</p>
+                </div>
+                <div id="banner-buttons">
+                    <a id="promo-shop-now-button" href=".">Shop Now</a>
+                    <a id="promo-terms-link" href=".">Full Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Brands -->
+        <div id="popular-brands-container">
+            <h2>Popular Brands</h2>
+            <ul>
+                <li><img src="./assets/Brands/honestkitchen_brandcarousel.png" alt="The Honest Kitchen Logo"></li>
+                <li><img src="./assets/Brands/logo-orjien-140w-140h.png" alt="Orijen Logo"></li>
+                <li><img src="./assets/Brands/merrick-logo.png" alt="Merrick Logo"></li>
+                <li><img src="./assets/Brands/Seresto-logo.png" alt="Seresto Logo"></li>
+                <li><img src="./assets/Brands/SoPhresh-logo.png" alt="Sophresh Logo"></li>
+                <li><img src="./assets/Brands/truemeals.png" alt="True Meals Logo"></li>
+                <li><img src="./assets/Brands/whimzees-190h-190w.png" alt="Whimzees Logo"></li>
+                <li><img src="./assets/Brands/wholehearted-membership-112917-logo-174w-96h-d.png" alt="Whole Hearted Logo"></li>
+                <li><img src="./assets/Brands/better-belly-190h-190w.png" alt="Better Belly Logo"></li>
+                <li><img src="./assets/Brands/brand-instinct-w190-h190.png" alt="Instinct Logo"></li>
+                <li><img src="./assets/Brands/brand-purebites-w190-h190.png" alt="Purebites Logo"></li>
+                <li><img src="./assets/Brands/hills-science-diet-0419-logo-thumb-140x140-d.png" alt="Hill's Science Diet Logo"></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-logo">
+            <img src="./assets/image-blue.png" alt="Petco Logo, Dog and Cat together.">
+        </div>
+        <div id="footer-container">
+            <div>
+                <div id="quick-link-container">
+                    <div>
+                        <h5 class="link-list-header">Customer Service</h5>
+                        <ul class="quick-link-list">
+                            <li><a class="footer-link" href=".">Track Order</a></li>
+                            <li><a class="footer-link" href=".">Returns</a></li>
+                            <li><a class="footer-link" href=".">Shipping Info</a></li>
+                            <li><a class="footer-link" href=".">Recalls and Advisories</a></li>
+                            <li><a class="footer-link" href=".">Pet Store Locator</a></li>
+                            <li><a class="footer-link" href=".">Help</a></li>
+                            <li><a class="footer-link" href=".">Contact Us</a></li>
+                            <li><a class="footer-link" href=".">Website Accessibility Policy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="link-list-header">Service</h5>
+                        <ul class="quick-link-list">
+                            <li><a class="footer-link" href=".">Vital Care</a></li>
+                            <li><a class="footer-link" href=".">Dog Grooming</a></li>
+                            <li><a class="footer-link" href=".">Petco Pay</a></li>
+                            <li><a class="footer-link" href=".">Self-Serce Dog Wash</a></li>
+                            <li><a class="footer-link" href=".">Positive Dog Training</a></li>
+                            <li><a class="footer-link" href=".">Veterinary Services</a></li>
+                            <li><a class="footer-link" href=".">Petco Insurance</a></li>
+                            <li><a class="footer-link" href=".">Pet Adoption</a></li>
+                            <li><a class="footer-link" href=".">Repeat Delivery</a></li>
+                            <li><a class="footer-link" href=".">Resource Center</a></li>
+                            <li><a class="footer-link" href=".">Best-Selling Products</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="link-list-header">Corporate</h5>
+                        <ul class="quick-link-list">
+                            <li><a class="footer-link" href=".">Careers</a></li>
+                            <li><a class="footer-link" href=".">About Us</a></li>
+                            <li><a class="footer-link" href=".">Code of Ethics</a></li>
+                            <li><a class="footer-link" href=".">COVID-19 Response</a></li>
+                            <li><a class="footer-link" href=".">Event Sponsorship</a></li>
+                            <li><a class="footer-link" href=".">Vendors</a></li>
+                            <li><a class="footer-link" href=".">Affiliate Program</a></li>
+                            <li><a class="footer-link" href=".">Petco Love</a></li>
+                            <li><a class="footer-link" href=".">Gift Cards</a></li>
+                            <li><a class="footer-link" href=".">Coupons and Promos</a></li>
+                            <li><a class="footer-link" href=".">Investors</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="lined-list-container">
+                    <ul>
+                        <li><a href="."><img src="./assets/Logo_PetCoach_1[1].png" alt="Pet Couch Logo"></a></li>
+                        <li><a href="."><img src="./assets/Logo_Vetco_1[1].png" alt="Vetco Logo"></a></li>
+                        <li><a href="."><img src="./assets/Logo_PupBox_1[1].png" alt="Pupbox Logo"></a></li>
+                        <li><a href="."><img src="./assets/Logo_PetInsuranceQuotes_1[1].png" alt="Pet Insurance Quotes Logo"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="."><img src="./assets/Icon awesome-facebook.png" alt="Facebook Logo"></a></li>
+                        <li><a href="."><img src="./assets/Icon awesome-twitter.png" alt="Twitter Logo"></a></li>
+                        <li><a href="."><img src="./assets/Icon awesome-pinterest.png" alt="Pintrest Logo"></a></li>
+                        <li><a href="."><img src="./assets/Icon awesome-instagram.png" alt="Instagram Logo"></a></li>
+                        <li><a href="."><img src="./assets/Icon awesome-youtube.png" alt="Youtube Logo"></a></li>
+                    </ul>
+                </div>
+                <div id="lower-footer-list-container">
+                    <ul>
+                        <li><a class="footer-link" href=".">Terms of Use</a></li>
+                        <li>-</li>
+                        <li><a class="footer-link" href=".">Privacy Policy</a></li>
+                        <li>-</li>
+                        <li><a class="footer-link" href=".">California Residency: Do Not Sell My Data</a></li>
+                        <li>-</li>
+                        <li><a class="footer-link" href=".">Site Map</a></li>
+                        <li>-</li>
+                        <li><a class="footer-link" href=".">Web Accessibility Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="copyright">Petco Copyright</p>
+        </div>
+    </footer>
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
