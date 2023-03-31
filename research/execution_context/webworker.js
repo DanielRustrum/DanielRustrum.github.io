@@ -9,6 +9,7 @@ function a() {
 
 
 function strict_mode() {
+    'use strict';
     function a() {
         let var_a = "value"
         debugger;
