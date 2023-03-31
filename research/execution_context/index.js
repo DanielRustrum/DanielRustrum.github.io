@@ -48,7 +48,20 @@ function strict_mode() {
 
 	function closures() {}
 
-	function async_and_iterators() {}
+	function async_and_iterators() {
+		async function a() {
+			let var_a = "value"
+		}
+
+		function* b() {
+			let var_b = "value"
+		}
+
+		debugger;
+
+		a().then().catch()
+		b().next()
+	}
 
 	function webworkers() {
 		debugger;
