@@ -8,3 +8,5 @@ function base() {
 	}
 	a()
 }
+
+base()
