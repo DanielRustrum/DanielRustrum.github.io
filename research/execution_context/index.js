@@ -10,12 +10,16 @@ function strict_mode() {
 	debugger;
 
 	var var_c = "value"
+	let var_d = "value"
+	const var_e = "value"
 	var_b = "value"
 
 	function a() {
 		function b() {
 			function c() {}
             debugger;
+			c()
+			debugger;
 		}
 		b()
 	}
@@ -29,6 +33,7 @@ function strict_mode() {
 		}
 	}
 
+	obj_a.b()
 	debugger;
 }
 
