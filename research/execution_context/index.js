@@ -49,10 +49,11 @@ function strict_mode() {
 	function closures() {}
 
 	function async_and_iterators() {
-		const p = new Promise((res, rej) => {
-			debugger;
-			res(1)
-		})
+		const p = new Promise((resolve, reject) => {
+			setTimeout(() => {
+			  	resolve("foo");
+			}, 300);
+		});
 
 		debugger;
 
