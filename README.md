@@ -2,4 +2,4 @@
 Github Workspace
 
 ## Research Pages
-[Execution Context](./research/execution_context)
+[Execution Context](https://danielrustrum.github.io/research/execution_context)
