@@ -51,7 +51,7 @@ function strict_mode() {
 	function async_and_iterators() {
 		const p = new Promise((resolve, reject) => {
 			setTimeout(() => {
-			  	resolve("foo");
+			  	resolve("foos");
 			}, 300);
 		});
 
