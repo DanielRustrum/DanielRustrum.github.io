@@ -51,15 +51,21 @@ function strict_mode() {
 	function async_and_iterators() {
 		async function a() {
 			let var_a = "value"
+			debugger;
 		}
 
 		function* b() {
 			let var_b = "value"
+			debugger;
 		}
 
 		debugger;
 
-		a().then().catch()
+		a().then(
+			() => {
+				debugger;
+			}
+		).catch()
 		b().next()
 	}
 
