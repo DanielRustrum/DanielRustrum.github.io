@@ -50,6 +50,7 @@ function strict_mode() {
 
 	function async_and_iterators() {
 		let var_a = "value"
+		let outer_val = null
 		const promiseA = new Promise((resolve, reject) => {
 			var_a = "value2"
 			debugger;
@@ -57,6 +58,7 @@ function strict_mode() {
 		})
 		
 		promiseA.then((val) => {
+			outer_val = val
 			debugger;
 		})
 
