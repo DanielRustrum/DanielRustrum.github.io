@@ -2,6 +2,8 @@ function sloppy_mode() {
 
 }
 
+eval("debugger;")
+
 function strict_mode() {
     'use strict';
 
