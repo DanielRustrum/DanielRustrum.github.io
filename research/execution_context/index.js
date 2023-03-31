@@ -5,7 +5,7 @@ function sloppy_mode() {
 function strict_mode() {
     'use strict';
 
-	function variables_functions_and_declaration() {
+	function variables_and_declaration() {
 		const var_a = "value"
 		let var_b;
 		debugger;
@@ -44,17 +44,25 @@ function strict_mode() {
 		debugger;
 	}
 
-	function more_functions() {}
+	function functions() {}
+
+	function closures() {}
 
 	function async_and_iterators() {}
 
-	function webworkers() {}
+	function webworkers() {
+		debugger;
+		const myWorker = new Worker("webworker.js");
+		debugger;
+	}
 
-	variables_functions_and_declaration()
+	variables_and_declaration()
 	blocks()
-	more_functions()
+	closures()
+	functions()
 	async_and_iterators()
 	webworkers()
 }
 
 strict_mode()
+sloppy_mode()
