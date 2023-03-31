@@ -1,4 +1,5 @@
-function base() {
+function strict() {
+    'use strict';
 	function a() {
 		function b() {
 			function c() {}
@@ -9,4 +10,4 @@ function base() {
 	a()
 }
 
-base()
+strict()
