@@ -38,6 +38,7 @@ function strict_mode() {
 			let var_c = "value"
 			debugger;
 		}
+		debugger;
 	}
 
 	function more_functions() {}
