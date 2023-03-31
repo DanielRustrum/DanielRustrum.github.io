@@ -33,11 +33,14 @@ function strict_mode() {
 	function blocks() {
 		let var_a = "value"
 		let var_b = "value"
+		debugger;
 		{
 			let var_b = "value"
 			let var_c = "value"
+			var var_e = "value"
 			debugger;
 		}
+		let var_d = "value"
 		debugger;
 	}
 
