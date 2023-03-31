@@ -49,19 +49,18 @@ function strict_mode() {
 	function closures() {}
 
 	function async_and_iterators() {
-		const p = new Promise((resolve, reject) => {
-			setTimeout(() => {
-			  	resolve("foos");
-			}, 300);
-		});
+		let var_a = "value"
+		const promiseA = new Promise((resolve, reject) => {
+			var_a = "value2"
+			debugger;
+			resolve(777)
+		})
+		
+		promiseA.then((val) => {
+			debugger;
+		})
 
 		debugger;
-
-		p.then(
-			() => {
-				debugger;
-			}
-		).catch()
 	}
 
 	function webworkers() {
