@@ -31,7 +31,13 @@ function strict_mode() {
 	}
 
 	function blocks() {
-
+		let var_a = "value"
+		let var_b = "value"
+		{
+			let var_b = "value"
+			let var_c = "value"
+			debugger;
+		}
 	}
 
 	function more_functions() {}
