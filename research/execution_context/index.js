@@ -49,24 +49,18 @@ function strict_mode() {
 	function closures() {}
 
 	function async_and_iterators() {
-		async function a() {
-			let var_a = "value"
+		const p = new Promise((res, rej) => {
 			debugger;
-		}
-
-		function* b() {
-			let var_b = "value"
-			debugger;
-		}
+			res(1)
+		})
 
 		debugger;
 
-		a().then(
+		p.then(
 			() => {
 				debugger;
 			}
 		).catch()
-		b().next()
 	}
 
 	function webworkers() {
