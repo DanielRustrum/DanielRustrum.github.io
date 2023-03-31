@@ -1,16 +1,21 @@
 let var_a = "value"
 let var_b = "value"
 
-console.log(this)
+debugger;
 
 function strict_mode() {
     'use strict';
 
     function a() {
+        function b() {
+            debugger;
+        }
+
         console.log(a)
         let var_a = "value"
         let var_c = "value"
         debugger;
+        b()
     }
     
     a()
