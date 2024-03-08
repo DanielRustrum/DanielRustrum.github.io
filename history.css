@@ -222,9 +222,11 @@ nav > button:hover {
             margin: auto;
         }
     }
-    button:focus, button:hover {
+
+    button:focus {
         filter: invert(20%) sepia(66%) saturate(7500%) hue-rotate(17deg) brightness(96%) contrast(103%);
     }
+    
     button#navigate-left {
         padding-right: 8px;
     }
