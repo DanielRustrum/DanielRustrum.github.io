@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="history.css">
+    <title>Document</title>
+</head>
+<body>
+    <script id="history-data" type="application/json">{
+        "data": [
+            {
+                "title": "A Brief History of Me",
+                "text": "My Journey in Tech has many twists and turns in it; starting at a young age and continues to this day... Here is that story."
+            },
+            {
+                "title": "A Younger Me",
+                "text": "My Love for Tech was kindled by the Game Engine GameMaker when I was 12, which introduced me into basic programming concepts, all to create a game which I could share with me friends. This would be the trend for a few years to follow. I used Amazon EC2 to host a Minecraft server, learn LUA to program robots within a Minecraft mod, eventually going on to learn C# to use the Unity Game Engine. "
+            },
+            {
+                "title": "A Season of Growth",
+                "text": "After my first year in High School, I would send time in my father's office that summer learning basic web development; from HTML to jQuery. He would test me on the things I would learn that day; sometimes retesting me. After that summer I would continue to refine my web development; picking up small jobs around the city; eventually teaching others at my High School."
+            },
+            {
+                "title": "My Time in University",
+                "text": "During these years, my passion to learn, create, and understand how tech works was like a Roller Coaster hitting all time highs and lows with many unexpected turns in between. This was mostly contributed to to a waning interest in the Web Dev I had been doing up to this point, finding something I am passionate about; to narrow my focus on a particular topic, and finding a clear path of growth. But through persistence and distractions I found that direction that I needed.  "
+            },
+            {
+                "title": "My Age of Exploration",
+                "text": "text5"
+            },
+            {
+                "title": "Wrap Up",
+                "text": "text6"
+            }
+        ]
+    }</script>
+    <dialog>
+        <div>
+            <ul>
+                <li><a href="./history.html">History</a></li>
+                <li><a href="./assets/Resume.pdf" download>Resume</a></li>
+                <li><button id="close-modal">Close</button></li>
+            </ul>
+        </div>
+    </dialog>
+    <nav>
+        <a href="./index.html">
+            <img src="./assets/Group 17.svg" alt="DR Logo for Daniel Rustrum">
+        </a>
+        <ul>
+            <li><a href="./history.html">History</a></li>
+            <li><a href="./assets/Resume.pdf" download>Resume</a></li>
+        </ul>
+        <button>
+            <img src="./assets/Icon metro-stack.svg" alt="Stack Button">
+        </button>
+    </nav>
+    <main>
+        <div id="history-group">
+            <h1 tabindex="0">Title</h1>
+            <p tabindex="0">Text</p>
+            <div id="history-text-buttons">
+                <button id="navigate-left">
+                    <img src="./assets/Icon feather-chevron-left.svg" alt="Left Nav Arrow">
+                </button>
+                <button id="navigate-right">
+                    <img src="./assets/Icon feather-chevron-right.svg" alt="Right Nav Arrow">
+                </button>
+            </div>
+        </div>
+        <img 
+            id="portrait-image"
+            src="./assets/Group 26.svg" 
+            alt="A 2 Color Image of Daniel Rustrum"
+        >
+    </main>
+    <script src="./index.js"></script>
+    <script src="./history.js"></script>
+
+</body>
+</html>

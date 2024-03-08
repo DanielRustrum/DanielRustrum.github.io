@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --accent: #DC2603;
+    --base: #050401;
+    --white: #FFFAFF;
+}
+
+
+body {
+    margin: 0px;
+    overflow: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    background-color: var(--white);
+}
+
+color {
+    color: var(--accent);
+}
+
+bold {
+    font-weight: 900;
+}
+
+dialog {
+    overflow: hidden;
+    background: none;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+}
+
+dialog::backdrop {
+    width: 1000px;
+    height: 110%;
+    background-color: rgba(5, 4, 1, 0.5);
+    
+}
+
+dialog > div {
+    background-color: var(--white);
+    position: fixed;
+    border-radius: 20px 20px 0px 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    ul {
+        display: flex;
+        padding: 25px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+
+        li > a {
+            text-decoration: none;
+            font-size: 35px;
+            color: var(--base);
+            font-weight: 500;
+        }
+
+        li > a:active {
+            text-decoration: none;
+        }
+
+        li > a:hover {
+            color: var(--accent);
+        }
+
+        li > button {
+            text-decoration: none;
+            font-size: 35px;
+            color: var(--base);
+            font-weight: 500;
+            background-color: inherit;
+            border: none;
+        }
+
+        li > button:hover {
+            color: var(--accent);
+        }
+
+    }
+}
+
+nav {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a:focus{
+        outline: none;
+        filter: invert(20%) sepia(66%) saturate(7500%) hue-rotate(17deg) brightness(96%) contrast(103%);
+    }
+}
+
+nav > img, nav > button > img {
+    height: clamp(35px,8vw,50px);
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--base);
+    font-weight: 500;
+
+    &:focus {
+        filter: invert(20%) sepia(66%) saturate(7500%) hue-rotate(17deg) brightness(96%) contrast(103%);
+    }
+}
+
+nav > ul > li > a:active {
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    color: var(--accent);
+}
+
+nav > button {
+    display: none;
+    background-color: inherit;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        filter: invert(20%) sepia(66%) saturate(7500%) hue-rotate(17deg) brightness(96%) contrast(103%);
+    }
+}
+nav > button:hover {
+    filter: invert(20%) sepia(66%) saturate(7500%) hue-rotate(17deg) brightness(96%) contrast(103%);
+}
+
+
+#info-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6vh;
+    padding-left: 5vw;
+    max-width: calc(100vw - (100vw - clamp(400px, 100vh - 700px + 50vw, 100vh - 100px)));
+}
+
+#info-group > * {
+    margin: 0px
+}
+
+h1 {
+    font-size: clamp(25px, 2vw + 2vh, 75px);
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 900;
+    display: block;
+    font-size: clamp(18px, (2vw + 2vh)/2, 25px);
+    text-align: center;
+    padding-top: 25px;
+}
+
+#social-icons {
+    display: flex;
+    gap: 25px;
+    padding-top: clamp(20px, 10vh + 5px, 250px);
+    list-style: none;
+    padding-left: 0px;
+}
+
+#social-icons > li > a > img {
+    height: clamp(25px, 3.5vw, 35px);
+}
+#social-icons > li {
+    cursor: pointer;
+    padding: 2px;
+    margin: auto;
+}
+#social-icons > li:hover {
+    filter: invert(20%) sepia(66%) saturate(7500%) hue-rotate(17deg) brightness(96%) contrast(103%);
+}
+
+#portrait-image {
+    height: clamp(400px, 100vh - 700px + 50vw, 100vh - 325px);
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+@media (max-width: 800px) {
+    h2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    nav > button {
+        display: block;
+    }
+}
+
+@media (orientation:portrait)  {
+    #portrait-image {
+        right: -65px;
+        bottom: -65px;
+        height: 65vh;
+    }
+
+    #social-icons {
+        flex-direction: column;
+        align-self: start;
+        justify-content: center;
+        padding-left: clamp(35px, (100vw - clamp(400px, 100vh - 700px + 25vw, 100vh - 100px) - 30px), 200px);
+    }
+}
+
