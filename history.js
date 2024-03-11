@@ -35,4 +35,6 @@ right_button.addEventListener('click', (event) => {
     event.preventDefault()
 })
 
+//TODO: Keyboard Navigation for History Carousel
+
 setHistory(history_data[0])
