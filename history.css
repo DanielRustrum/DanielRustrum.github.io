@@ -12,7 +12,7 @@
     }
     
     p {
-        --text-fixed-size: 25vh;
+        --text-fixed-size: 35vh;
         min-height: var(--text-fixed-size);
         max-height: var(--text-fixed-size);
         overflow-y: scroll;

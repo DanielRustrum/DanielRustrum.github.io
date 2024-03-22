@@ -1,0 +1,40 @@
+{
+    "contact": [
+        {
+            "key": "email",
+            "value": "danieltrustrum@gmail.com"
+        },
+        {
+            "key": "website",
+            "value": "daniel.rustrum.net"
+        }
+    ],
+    "experience": [{
+        "employeer": "Deckers Brands - Content Team",
+        "position": "Quaility Assurance Analyst",
+        "dates": {
+            "from": "November 2020"
+        },
+        "points": [
+            "Led several key initiatives including web accessibility, communicative documentation, promotion security, test standards, and team unification.",
+            "Wrote automation scripts to enhance testing workflow and improve performance.",
+            "Collaborated with web developers to identify and resolve issues during the implementation phase.",
+            "Facilitated the implementation of new technologies, bridging the gap between product owners and developers.",
+            "Streamline operations to minimize issues, particularly during crucial, high-traffic periods.",
+            "Helped the UGG team to significantly increase the Quality and Security without a reduction in efficiency by embracing Quality Practices."
+        ]
+    },
+    {
+        "employeer": "Deckers Brands - Order Management Team",
+        "position": "Quaility Assurance Analyst",
+        "dates": {
+            "from": "January 2019",
+            "to": "December 2020"
+        },
+        "points": [
+            
+        ]
+    }],
+    "additional-info": [],
+    "competencies": []
+}
