@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 500px) {
+    h1 {
+        padding-top: 0px;
+    }
+
     #history-text-buttons {
         padding-left: 15vw;
         align-self: flex-start;
