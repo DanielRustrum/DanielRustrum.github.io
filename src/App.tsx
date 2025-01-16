@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import './App.scss'
+
+import {P} from './components/core/P'
+import {Background} from './components/core/Background'
+
+import { Landing } from './pages/Landing'
+import { Gallery } from './pages/Gallery'
+import { Resume } from './pages/Resume'
+import { Story } from './pages/Story'
+
+function PageRouting () {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/story" element={<Story />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Background cube_size={40}>
+      <header></header>
+      <main>
+        <div className="grid centered gap-15px">
+          <PageRouting />
+        </div>
+      </main>
+      <footer>
+        <P>2025 * Made with Care</P>
+      </footer>
+    </Background>
   )
 }
 
