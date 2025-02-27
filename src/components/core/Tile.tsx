@@ -10,7 +10,7 @@ type FunctionComponent<Props extends Object = {}, Base = {}, Exclude extends str
                 Props & Omit<Base & {children?: ReactNode}, Exclude> 
 >
 
-type Component<Props extends Object = {}, Base extends Object = {}, Exclude extends string = ""> = 
+type Component<Props extends Object = {}, Base extends Object | FunctionComponent = {}, Exclude extends string = ""> = 
     Base extends FunctionComponent<infer ComponentProp, infer ComponentBase, infer ComponentExclude> ? 
         FunctionComponent<
             keyof Props extends never? ComponentProp: Props, 
