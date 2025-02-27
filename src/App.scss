@@ -1,5 +1,8 @@
 #root {
-    background-color: #181825;
+    background-color: #181825;background-image: url('./assets/box-dark.svg');
+    background-repeat: repeat;
+    background-size: 4vw;
+    min-height: 100dvh;
 }
 
 #app--container {
@@ -20,4 +23,14 @@ footer {
     justify-content: end;
     padding: 20px;
     color: #cdd6f4;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+
+    &::before {
+        content: " ";
+    }
 }
