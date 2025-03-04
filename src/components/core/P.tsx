@@ -1,12 +1,16 @@
-import { FC as FunctionComponent, ReactNode } from "react"
+import { FC as FunctionComponent, ReactNode, CSSProperties } from "react"
 type TileComponent = FunctionComponent<{
-    children: ReactNode
+    children: ReactNode,
+    style?: CSSProperties,
+    className?: string
 }>
 
 export const P: TileComponent = ({
-    children
+    children,
+    style,
+    className
 }) => {
     return (
-        <p tabIndex={0}>{children}</p>
+        <p style={style} tabIndex={0} className={className}>{children}</p>
     )
 }

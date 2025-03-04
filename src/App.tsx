@@ -2,10 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import './App.scss'
 
-import {P} from './components/core/P'
+import { P } from './components/core/P'
 
 import { Landing } from './pages/Landing'
-import { Gallery } from './pages/Gallery'
 import { Resume } from './pages/Resume'
 import { Story } from './pages/Story'
 
@@ -14,12 +13,8 @@ function PageRouting () {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/playground" element={<Gallery />} />
-        <Route path="/developer" element={<Resume />} />
-        <Route path="/photographer" element={<Resume />} />
-        <Route path="/designer" element={<Resume />} />
         <Route path="/story" element={<Story />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </BrowserRouter>
   )

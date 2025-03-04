@@ -11,7 +11,6 @@
     justify-content: space-between;
     height: 100vh;
     background: linear-gradient(#31324475 0%, #18182525 35%, #18182590 50%, #11111b 75%);
-    // background-color: #181825;
 }
 
 header {
@@ -25,12 +24,55 @@ footer {
     color: #cdd6f4;
 }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
+body {
+    overflow: hidden;
+}
 
-    &::before {
-        content: " ";
-    }
+// Scrollbar
+//Help: https://stackoverflow.com/questions/29866759/how-do-i-add-a-margin-to-a-css-webkit-scrollbar
+.scrollbar {
+    overflow-y: auto
+}
+
+.scrollbar.thin::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -2rem;
+    width: 2rem;
+    height: 1px;
+}
+
+.scrollbar.thin::-webkit-scrollbar {
+    width: 25px;
+    height: 10px;
+}
+
+/* Track */
+.scrollbar.thin::-webkit-scrollbar-track {
+    background: #313244;
+    border-radius: 50px;
+    background-clip: content-box;
+    border: 10px solid transparent;
+}
+
+/* Handle */
+.scrollbar.thin::-webkit-scrollbar-thumb {
+    background-color: #fab387;
+    border-radius: 80px;
+    transition: all 0.4s;
+    margin: 10px;
+    height: 50px;
+    background-clip: content-box;
+    border: 10px solid transparent;
+
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+/* Handle on hover */
+.scrollbar.drap-pop::-webkit-scrollbar-thumb:hover {
+    background: #fab387;
+    background-clip: content-box;
+    border: 8px solid transparent;
 }
