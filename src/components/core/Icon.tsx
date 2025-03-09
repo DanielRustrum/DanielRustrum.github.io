@@ -15,6 +15,8 @@ import pin_icon from '../../assets/icons/pin.png'
 import twitch_icon from '../../assets/icons/twitch.png'
 import twitter_icon from '../../assets/icons/x-twitter.png'
 import youtube_icon from '../../assets/icons/youtube.png'
+import prev_icon from '../../assets/icons/prev.png'
+import next_icon from '../../assets/icons/next.png'
 
 
 interface IconProps {
@@ -38,6 +40,8 @@ const image_map: {[key: string]: string} = {
     "twitch": twitch_icon,
     "twitter": twitter_icon,
     "youtube": youtube_icon,
+    "prev": prev_icon,
+    "next": next_icon
 }
 
 export const Icon: Component<IconProps> = ({ name, size = "medium" }) => {

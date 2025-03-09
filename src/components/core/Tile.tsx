@@ -84,7 +84,7 @@ export const LinkTile: Component<LinkTileProps, typeof Tile, "height" | "width">
         >
             <div style={{
                 display: "flex", 
-                background: `linear-gradient(0deg, #1E1E2E90, #1E1E2E90), url(${background_image})`, 
+                background: `linear-gradient(0deg, #1E1E2E99, #1E1E2E99), url(${background_image})`, 
                 height: "100%", 
                 width:"100%", 
                 justifyContent: "center", 
