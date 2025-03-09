@@ -1,0 +1,20 @@
+$mobile_breakpoint: 601px;
+$tablet_breakpoint: 1025px;
+
+@mixin not-on-mobile($offset: 0px) {
+    @media (width > ($mobile_breakpoint + $offset)) {
+        @content;
+    }
+}
+
+@mixin not-on-tablet($offset: 0px) {
+    @media (width <= ($mobile_breakpoint + $offset)) or (width > ($tablet_breakpoint+ $offset)) {
+        @content;
+    }
+}
+
+@mixin not-on-desktop($offset: 0px) {
+    @media (width <= ($tablet_breakpoint+ $offset)) {
+        @content;
+    }
+}
