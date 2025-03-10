@@ -7,7 +7,7 @@ import { CSSProperties } from 'react'
 import resume_background from '../assets/Desk.png'
 import map_background from '../assets/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg'
 import blog_background from '../assets/code.png'
-import profile_background from '../assets/profile.png'
+import profile_background from '../assets/Profile.png'
 
 import hotel_flag_image from '../assets/Pictures/hotel flag.png'
 import bee_image from '../assets/Pictures/Bee and the Flower.png'
